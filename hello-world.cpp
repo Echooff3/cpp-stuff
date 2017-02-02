@@ -82,7 +82,7 @@ int main() {
     cout << "You can't drive" << endl;
   } else {
     cout << "You can drive" << endl;
-  }
+  };
 
   // Switch Statement
   int greetingOption = 2;
@@ -95,7 +95,7 @@ int main() {
       break;
     default :
       cout << "Hello!" << endl;
-  }
+  };
 
   // Ternary Operator
   // variable = (condition) ? true : false;
@@ -109,16 +109,8 @@ int main() {
   cout << "Bad Number 1: " << badNums[0] << endl;
 
   // Multidimensional arrays
-  char myName[7][5] = {{ 'M', 'i', 'c', 'h', 'a', 'e', 'l' },
-                       { 'P', 'e', 'r', 'r', 'y' }};
-  cout << "Second letter in 2nd array: " << myName[1][1] << endl;
-
-  // Set new letter
-  myName[0][2] = 'k';
-  cout << "New Value: " << myName[0][2] << endl;
-
-  // For Loop
-
+  char myName[7][5] = {{'M', 'i', 'c', 'h', 'a', 'e'},
+                      {'P', 'e', 'r', 'r', 'y'}};
 
 
   return 0;
