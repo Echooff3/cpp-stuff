@@ -101,15 +101,15 @@ int main() {
   // variable = (condition) ? true : false;
   int largestNum = (5 > 2) ? 5 : 2;
 
-  // Array
+  // Arrays
   int myFavNum[5];
 
   int badNums[5] = { 4, 13, 14, 24, 34 };
 
   cout << "Bad Number 1: " << badNums[0] << endl;
 
-  // Multidimensional arrays
-  char myName[7][5] = {{'M', 'i', 'c', 'h', 'a', 'e'},
+  // Multidimensional Arrays
+  char myName[2][7] = {{'M', 'i', 'c', 'h', 'a', 'e', 'l'},
                       {'P', 'e', 'r', 'r', 'y'}};
 
 
