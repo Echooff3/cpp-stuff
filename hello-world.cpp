@@ -137,13 +137,13 @@ int main() {
   int randNum = (rand() % 100) + 1;
   cout << randNum << endl;
 
-  // while(randNum != 100) {
-    //cout << randNum << ", ";
-    //int randNum = (rand() % 100) + 1;
+  while(randNum != 100) {
+    cout << randNum << ", ";
+    randNum = (rand() % 100) + 1;
     // .\hello-world.cpp:18:23: error: 'rand' was not declared in this scope
     // Fixed with #include <cstdlib>
-  //}
-  //cout << endl;
+  }
+  cout << endl;
 
   return 0;
 }
