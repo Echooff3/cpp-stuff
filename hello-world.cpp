@@ -6,6 +6,7 @@
  * Multi-line comment
  */
 
+//#include <cstdlib>  // Note: from Skib
 #include <iostream>
 #include <vector>
 #include <string>
@@ -111,7 +112,38 @@ int main() {
   // Multidimensional Arrays
   char myName[2][7] = {{'M', 'i', 'c', 'h', 'a', 'e', 'l'},
                       {'P', 'e', 'r', 'r', 'y'}};
+  cout << "2nd letter in 2nd array: " << myName[1][1] << endl;
 
+  myName[0][2] = 'k';
+
+  cout << "New value: " << myName[0][2] << endl;
+
+  // This prints hex value??
+  // cout << "Full Value: " << myName << endl;
+
+  // For Loop
+  for (int i = 1; i <= 10; i++) {
+    cout << i << endl;
+  }
+
+  for (int j = 0; j < 2; j++) {
+    for (int k = 0; k < 7; j++) {
+      cout << myName[j][k];
+    }
+    cout << endl;
+  }
+
+  // While Loop
+  int randNum = (rand() % 100) + 1;
+  cout << randNum << endl;
+
+  // while(randNum != 100) {
+    //cout << randNum << ", ";
+    //int randNum = (rand() % 100) + 1;
+    // .\hello-world.cpp:18:23: error: 'rand' was not declared in this scope
+    // Fixed with #include <cstdlib>
+  //}
+  //cout << endl;
 
   return 0;
 }
