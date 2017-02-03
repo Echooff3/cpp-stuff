@@ -11,6 +11,7 @@
 #include <vector>
 #include <string>
 #include <fstream>
+#include <time.h>
 
 using namespace std;
 
@@ -134,6 +135,8 @@ int main() {
   }
 
   // While Loop
+  /* initialize random seed: */
+  srand (time(NULL));
   int randNum = (rand() % 100) + 1;
   cout << randNum << endl;
 
