@@ -112,7 +112,7 @@ int main() {
 
   // Multidimensional Arrays
   char myName[2][7] = {{'M', 'i', 'c', 'h', 'a', 'e', 'l'},
-                      {'P', 'e', 'r', 'r', 'y'}};
+                      {'P', 'e', 'r', 'r', 'y', '\0', '\0'}};
   cout << "2nd letter in 2nd array: " << myName[1][1] << endl;
 
   myName[0][2] = 'k';
@@ -128,7 +128,7 @@ int main() {
   }
 
   for (int j = 0; j < 2; j++) {
-    for (int k = 0; k < 7; j++) {
+    for (int k = 0; k < 7; k++) {
       cout << myName[j][k];
     }
     cout << endl;
@@ -140,13 +140,13 @@ int main() {
   int randNum = (rand() % 100) + 1;
   cout << randNum << endl;
 
-  // while(randNum != 100) {
-    //cout << randNum << ", ";
-    //int randNum = (rand() % 100) + 1;
+  while(randNum != 100) {
+    cout << randNum << ", ";
+    randNum = (rand() % 100) + 1;
     // .\hello-world.cpp:18:23: error: 'rand' was not declared in this scope
     // Fixed with #include <cstdlib>
-  //}
-  //cout << endl;
+  }
+  cout << endl;
 
   return 0;
 }
