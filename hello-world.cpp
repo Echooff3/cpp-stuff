@@ -111,7 +111,7 @@ int main() {
 
   // Multidimensional Arrays
   char myName[2][7] = {{'M', 'i', 'c', 'h', 'a', 'e', 'l'},
-                      {'P', 'e', 'r', 'r', 'y'}};
+                      {'P', 'e', 'r', 'r', 'y', '\0', '\0'}};
   cout << "2nd letter in 2nd array: " << myName[1][1] << endl;
 
   myName[0][2] = 'k';
@@ -127,7 +127,7 @@ int main() {
   }
 
   for (int j = 0; j < 2; j++) {
-    for (int k = 0; k < 7; j++) {
+    for (int k = 0; k < 7; k++) {
       cout << myName[j][k];
     }
     cout << endl;
